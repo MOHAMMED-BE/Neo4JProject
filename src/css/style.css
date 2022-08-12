@@ -1,0 +1,184 @@
+:root{
+  --bg-color1 : #f6f9ff;
+  --bg-color2 : #fbfbfb;
+  --shadow-1 : 0px 0 30px rgb(1 41 112 / 10%);
+  --shadow-2 : 0 0.3rem 2.9rem rgb(5 86 169 / 8%) !important;
+  --font-color-1 : #057c66;
+  --font-color-2 : #012970;
+  --font-color-3 : #ff771d;
+  --font-color-4 : #ffa701;
+
+}
+@font-face{
+  font-family: 'Varela Round'; 
+  src:url(../FontFalilly/VarelaRound-Regular.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif !important;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+body{
+  background-color: #f6f9ff52;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar{
+  box-shadow: 0 0.3rem 0.9rem rgb(5 92 98 / 14%) !important;
+  background-color: #fff !important;
+}
+
+.nav-link{
+  width: 130px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  margin: 0 -10px 0 0 !important;
+  letter-spacing: 1px !important;
+}
+
+.nav-item::after{
+  content: "" !important;
+  position: absolute !important;
+  left: auto !important;
+  bottom: auto !important;
+  height: 4px !important;
+  width: 4px !important;
+  background: var(--font-color-4) !important;
+  margin: -4px 0 0 61px !important;
+  border-radius: 12px !important;
+  transition: width 0.8s ease-out !important;
+}
+
+.nav-item:hover:after{
+  width: 80px !important;
+  margin: -4px 0 0 27px !important;
+  height: 3px !important;
+}
+
+.main-section{
+  width: 100% !important;
+    height: 10vh !important;
+    align-items: center !important;
+}
+
+
+.section-header{
+  text-align: center;
+  margin: 30px 0 -20px 0;
+}
+
+.section-header .section-title{
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #0d4242;
+  text-shadow: 0px 0px 5px #03f7f7, 0px 0px 12px #0f277e;
+}
+
+.section-header .line{
+  display: block;
+  background: linear-gradient(to left, #03f7f7,#8706f0);
+  width: 40%;
+  height: 4px;
+  margin: 0 auto 70px auto;
+  border-radius: 10px;
+}
+
+.size{
+  width: 260px;
+  height: 360px;
+  box-shadow: 0 0.3rem 0.9rem rgb(5 92 98 / 14%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.info{
+  box-shadow: var(--shadow-2);
+  width: 250px !important;
+  height: 95px !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0rem;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+
+.size img{
+  width: 180px;
+  height: 180px;
+  transition: transform 0.7s;
+  transform: scale(1.1);
+}
+
+.size img:hover{
+  transform: scale(1.3);
+}
+
+.size span , .size p{
+  font-size: 20px;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+}
+
+.size p{
+  margin: 0 0 -10px 0;
+  color: var(--font-color-2);
+  font-weight: 700;
+  font-size: 20px;
+}
+.size span{
+  color: var(--font-color-2);
+}
+
+.form{
+  width: 249px;
+  height: 45px;
+  margin: 0px -50px -13px 0px;
+}
+
+
+.foot{
+  width: 100%;
+  height: 45px;
+  background-color: #f8f9fa;
+  bottom: 0;
+  margin: 1.5rem 0 0 0;
+  box-shadow: 0 0.3rem 1.5rem rgb(0 0 0 / 35%) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 0 0;
+
+}
+
+.foot a{
+  color: #ffa701;
+  text-decoration: none;
+  display: contents;
+}
+
+
+label{
+  letter-spacing: 1.5px !important;
+}
